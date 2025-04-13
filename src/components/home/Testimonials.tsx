@@ -5,26 +5,26 @@ import { ChevronLeft, ChevronRight, Star } from "lucide-react";
 const testimonials = [
   {
     id: 1,
-    name: "Sarah Johnson",
+    name: "Priya Sharma",
     role: "Coffee Enthusiast",
-    image: "https://randomuser.me/api/portraits/women/45.jpg",
-    quote: "Daily Grind has become my second home. The atmosphere is perfect for working, and their cappuccino is the best in town!",
+    image: "https://randomuser.me/api/portraits/women/33.jpg",
+    quote: "The Filter Kaapi here reminds me of my grandmother's coffee in Chennai. Absolutely authentic and delicious!",
     rating: 5
   },
   {
     id: 2,
-    name: "Michael Chen",
-    role: "Local Foodie",
+    name: "Rahul Patel",
+    role: "Food Blogger",
     image: "https://randomuser.me/api/portraits/men/32.jpg",
-    quote: "I can't say enough good things about this place. The pastries are always fresh, and the staff remembers my usual order.",
+    quote: "Their cardamom cold brew is the perfect blend of traditional flavors with modern brewing techniques. A must-try!",
     rating: 5
   },
   {
     id: 3,
-    name: "Emma Rodriguez",
-    role: "Freelance Writer",
-    image: "https://randomuser.me/api/portraits/women/63.jpg",
-    quote: "As someone who works remotely, I appreciate the comfortable seating and reliable WiFi. And the coffee is excellent too!",
+    name: "Anjali Desai",
+    role: "Digital Nomad",
+    image: "https://randomuser.me/api/portraits/women/44.jpg",
+    quote: "I love working from this café. The masala chai keeps me going, and the atmosphere is so welcoming.",
     rating: 4
   }
 ];
@@ -52,9 +52,9 @@ const Testimonials = () => {
   }, [current, autoplay]);
   
   return (
-    <section className="py-20 bg-coffee-800 text-white">
+    <section className="py-20 bg-chai-800 text-white indian-pattern">
       <div className="container-custom">
-        <h2 className="section-title text-center text-cream-100">What Our Customers Say</h2>
+        <h2 className="section-title text-center text-cream-100">What Our Guests Say</h2>
         
         <div className="relative mt-12 max-w-4xl mx-auto">
           <div className="overflow-hidden">
@@ -67,13 +67,13 @@ const Testimonials = () => {
                   key={testimonial.id} 
                   className="min-w-full px-4"
                 >
-                  <div className="bg-coffee-700/50 rounded-lg p-8 text-center">
+                  <div className="bg-chai-700/50 rounded-lg p-8 text-center border border-spice-500/30">
                     <div className="flex justify-center mb-4">
                       {[...Array(5)].map((_, i) => (
                         <Star 
                           key={i} 
                           size={20} 
-                          className={i < testimonial.rating ? "text-yellow-400 fill-yellow-400" : "text-gray-400"} 
+                          className={i < testimonial.rating ? "text-spice-400 fill-spice-400" : "text-gray-400"} 
                         />
                       ))}
                     </div>
@@ -96,7 +96,7 @@ const Testimonials = () => {
           </div>
           
           <button 
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 bg-coffee-600 hover:bg-coffee-500 rounded-full p-2 shadow-lg hidden md:block" 
+            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 bg-henna-600 hover:bg-henna-500 rounded-full p-2 shadow-lg hidden md:block" 
             onClick={() => { prev(); setAutoplay(false); }}
             aria-label="Previous testimonial"
           >
@@ -104,7 +104,7 @@ const Testimonials = () => {
           </button>
           
           <button 
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 bg-coffee-600 hover:bg-coffee-500 rounded-full p-2 shadow-lg hidden md:block" 
+            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 bg-henna-600 hover:bg-henna-500 rounded-full p-2 shadow-lg hidden md:block" 
             onClick={() => { next(); setAutoplay(false); }}
             aria-label="Next testimonial"
           >
@@ -115,7 +115,7 @@ const Testimonials = () => {
             {testimonials.map((_, index) => (
               <button
                 key={index}
-                className={`w-3 h-3 rounded-full ${index === current ? 'bg-white' : 'bg-white/30'}`}
+                className={`w-3 h-3 rounded-full ${index === current ? 'bg-spice-400' : 'bg-white/30'}`}
                 onClick={() => { setCurrent(index); setAutoplay(false); }}
                 aria-label={`Go to testimonial ${index + 1}`}
               />

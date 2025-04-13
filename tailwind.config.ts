@@ -81,6 +81,40 @@ export default {
                     400: '#F8E4C8',
                     500: '#F0D6B7',
                 },
+                // Indian theme colors
+                spice: {
+                    100: '#FFF3E0', // Light turmeric
+                    200: '#FFE0B2', // Light saffron
+                    300: '#FFCC80', // Medium saffron
+                    400: '#FFB74D', // Saffron
+                    500: '#FFA726', // Deep saffron (main)
+                    600: '#FB8C00', // Darker saffron
+                    700: '#F57C00', // Burnt saffron
+                    800: '#EF6C00', // Very dark saffron
+                    900: '#E65100', // Almost red saffron
+                },
+                chai: {
+                    100: '#EFEBE9', // Light chai
+                    200: '#D7CCC8', // Pale chai
+                    300: '#BCAAA4', // Medium chai
+                    400: '#A1887F', // Chai
+                    500: '#8D6E63', // Rich chai (main)
+                    600: '#795548', // Dark chai
+                    700: '#6D4C41', // Very dark chai
+                    800: '#5D4037', // Extra dark chai
+                    900: '#4E342E', // Almost black chai
+                },
+                henna: {
+                    100: '#FFCCBC', // Light henna
+                    200: '#FFAB91', // Medium henna
+                    300: '#FF8A65', // Henna
+                    400: '#FF7043', // Deep henna
+                    500: '#FF5722', // Bright henna (main)
+                    600: '#F4511E', // Dark henna
+                    700: '#E64A19', // Very dark henna
+                    800: '#D84315', // Extra dark henna
+                    900: '#BF360C', // Almost brown henna
+                },
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
