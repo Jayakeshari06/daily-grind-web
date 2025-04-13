@@ -90,3 +90,22 @@
     @apply bg-opacity-5 bg-[url('https://www.transparenttextures.com/patterns/clean-gray-paper.png')];
   }
 }
+
+/* Indian-themed decorative elements */
+.border-rangoli {
+  @apply relative;
+}
+
+.border-rangoli::before,
+.border-rangoli::after {
+  content: "";
+  @apply absolute w-16 h-16 bg-contain bg-no-repeat opacity-80;
+}
+
+.border-rangoli::before {
+  @apply top-0 left-0 bg-[url('https://www.transparenttextures.com/patterns/paisley.png')];
+}
+
+.border-rangoli::after {
+  @apply bottom-0 right-0 bg-[url('https://www.transparenttextures.com/patterns/paisley.png')] rotate-180;
+}

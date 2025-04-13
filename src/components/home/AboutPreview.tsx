@@ -9,7 +9,7 @@ const AboutPreview = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="relative">
             <img 
-              src="https://images.unsplash.com/photo-1596197538469-7ff3b4b4b4f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+              src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
               alt="Indian coffee preparation" 
               className="rounded-lg shadow-lg w-full h-auto"
             />
