@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,13 +62,35 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+                coffee: {
+                    100: '#F5EBE0',
+                    200: '#E6D2BA',
+                    300: '#D2B48C',
+                    400: '#A67C52',
+                    500: '#7D5A3C',
+                    600: '#5C4033',
+                    700: '#3B2A20',
+                    800: '#1E1510',
+                    900: '#0D0905',
+                },
+                cream: {
+                    100: '#FFFBF2',
+                    200: '#FFF6E5',
+                    300: '#FFF1D6',
+                    400: '#F8E4C8',
+                    500: '#F0D6B7',
+                },
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
 			},
+            fontFamily: {
+                'playfair': ['"Playfair Display"', 'serif'],
+                'lato': ['Lato', 'sans-serif'],
+            },
 			keyframes: {
 				'accordion-down': {
 					from: {
@@ -84,11 +107,31 @@ export default {
 					to: {
 						height: '0'
 					}
-				}
+				},
+                'fade-in': {
+                    '0%': {
+                        opacity: '0',
+                        transform: 'translateY(10px)'
+                    },
+                    '100%': {
+                        opacity: '1',
+                        transform: 'translateY(0)'
+                    }
+                },
+                'pulse-slow': {
+                    '0%, 100%': {
+                        opacity: '1'
+                    },
+                    '50%': {
+                        opacity: '0.8'
+                    }
+                }
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+                'fade-in': 'fade-in 0.5s ease-out',
+                'pulse-slow': 'pulse-slow 3s ease-in-out infinite'
 			}
 		}
 	},
