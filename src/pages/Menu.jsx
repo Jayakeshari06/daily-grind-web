@@ -45,7 +45,7 @@ export const menuItems = [
 const Menu = () => {
   const [activeCategory, setActiveCategory] = useState("all");
   const [filteredItems, setFilteredItems] = useState(menuItems);
-  const [cart, setCart] = useState<{item: any, quantity: number}[]>([]);
+  const [cart, setCart] = useState([]);
   const [showCart, setShowCart] = useState(false);
   
   useEffect(() => {
@@ -56,7 +56,7 @@ const Menu = () => {
     }
   }, [activeCategory]);
 
-  const addToCart = (item: any) => {
+  const addToCart = (item) => {
     setCart(prevCart => {
       const existingItem = prevCart.find(cartItem => cartItem.item.id === item.id);
       if (existingItem) {
@@ -71,13 +71,13 @@ const Menu = () => {
     });
   };
 
-  const removeFromCart = (itemId: number) => {
+  const removeFromCart = (itemId) => {
     setCart(prevCart => 
       prevCart.filter(cartItem => cartItem.item.id !== itemId)
     );
   };
 
-  const updateQuantity = (itemId: number, quantity: number) => {
+  const updateQuantity = (itemId, quantity) => {
     if (quantity <= 0) {
       removeFromCart(itemId);
       return;
@@ -100,7 +100,6 @@ const Menu = () => {
   };
 
   const placeOrder = () => {
-    // In a real app, this would send the order to a backend
     alert("Your order has been placed! In a production app, this would connect to a backend API.");
     setCart([]);
     setShowCart(false);
@@ -118,7 +117,6 @@ const Menu = () => {
   
   return (
     <div className="pt-16">
-      {/* Hero Section */}
       <section className="relative py-24 bg-chai-800 text-white">
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-r from-chai-900/90 to-chai-800/80 z-10" />
@@ -146,10 +144,8 @@ const Menu = () => {
         </div>
       </section>
 
-      {/* Menu Section */}
       <section className="py-16 bg-white indian-pattern">
         <div className="container-custom">
-          {/* Category Filters */}
           <div className="flex flex-wrap justify-center gap-4 mb-12">
             <Button 
               variant={activeCategory === "all" ? "default" : "outline"}
@@ -174,7 +170,6 @@ const Menu = () => {
             ))}
           </div>
           
-          {/* Menu Items */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
             {filteredItems.map((item) => (
               <div 
@@ -205,7 +200,6 @@ const Menu = () => {
             ))}
           </div>
           
-          {/* Notes */}
           <div className="mt-16 bg-cream-100 p-6 rounded-lg">
             <h3 className="text-xl font-bold text-chai-700 mb-3">Good to Know</h3>
             <ul className="space-y-2 text-chai-600">
@@ -217,7 +211,6 @@ const Menu = () => {
             </ul>
           </div>
           
-          {/* Cart Button */}
           <div className="mt-16 text-center">
             <Button 
               size="lg" 
@@ -235,7 +228,6 @@ const Menu = () => {
         </div>
       </section>
 
-      {/* Shopping Cart Modal */}
       {showCart && (
         <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
           <div className="bg-white rounded-lg max-w-2xl w-full max-h-[80vh] overflow-y-auto">
