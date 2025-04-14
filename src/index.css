@@ -89,6 +89,14 @@
   .mandala-bg {
     @apply bg-opacity-5 bg-[url('https://www.transparenttextures.com/patterns/clean-gray-paper.png')];
   }
+  
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .transform-gpu {
+    transform: translateZ(0);
+  }
 }
 
 /* Indian-themed decorative elements */
@@ -118,10 +126,32 @@
   backface-visibility: hidden;
 }
 
+/* Animation utilities */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-bounce {
+  animation: bounce 2s infinite;
+}
+
 /* Responsive fixes for mobile view */
 @media (max-width: 768px) {
   .container-custom {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+  
+  .section-title {
+    @apply text-2xl md:text-3xl;
+  }
+  
+  .section-subtitle {
+    @apply text-base;
   }
 }

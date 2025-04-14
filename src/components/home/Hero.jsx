@@ -14,7 +14,7 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-r from-chai-800/90 to-chai-700/70 mix-blend-multiply z-10" />
+        <div className="absolute inset-0 bg-gradient-to-r from-chai-800/95 to-chai-700/80 mix-blend-multiply z-10" />
         <img 
           src="https://images.unsplash.com/photo-1589476993333-f55b84301219?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80" 
           alt="Indian coffee shop interior" 
@@ -22,28 +22,29 @@ const Hero = () => {
         />
       </div>
       
-      <div className="container-custom relative z-20 text-center text-white mt-16 animate-fade-in">
-        <div className="mb-4">
+      <div className="container-custom relative z-20 text-center text-white mt-10 md:mt-16 animate-fade-in px-4 sm:px-6">
+        <div className="mb-4 md:mb-6">
           <img 
             src="https://www.freepnglogos.com/uploads/om-symbol-png/om-symbol-hinduism-hindu-dharma-symbol-meaning-history-8.png" 
             alt="Om symbol" 
-            className="h-20 mx-auto mb-2 opacity-80"
+            className="h-16 md:h-20 mx-auto mb-2 opacity-90"
           />
         </div>
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+        <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold mb-4 md:mb-6 leading-tight text-shadow">
           Experience Authentic <br className="hidden md:block" />
           <span className="text-spice-300">Indian Coffee</span>
         </h1>
-        <p className="text-lg md:text-xl lg:text-2xl mb-8 max-w-3xl mx-auto text-cream-100/90">
-          From traditional Filter Kaapi to exotic Masala brews, we bring you the rich flavors of India.
+        <p className="text-base md:text-xl lg:text-2xl mb-6 md:mb-8 max-w-3xl mx-auto text-cream-100/95 drop-shadow-md">
+          From traditional Filter Kaapi to exotic Masala brews, <br className="hidden md:block" />
+          we bring you the rich flavors of India.
         </p>
         <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
-          <Button asChild size="lg" className="bg-henna-500 hover:bg-henna-600 text-white">
+          <Button asChild size="lg" className="bg-henna-500 hover:bg-henna-600 text-white px-8 py-6 shadow-lg">
             <Link to="/menu">
               Explore Our Menu
             </Link>
           </Button>
-          <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white/10">
+          <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white/10 px-8 py-6">
             <a href="https://order.dailygrind.com" target="_blank" rel="noopener noreferrer">
               Order Online
             </a>
@@ -52,7 +53,7 @@ const Hero = () => {
         
         <button 
           onClick={scrollToNext}
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-pulse-slow"
+          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce"
           aria-label="Scroll down"
         >
           <ChevronDown size={32} />
