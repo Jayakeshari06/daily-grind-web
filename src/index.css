@@ -109,3 +109,19 @@
 .border-rangoli::after {
   @apply bottom-0 right-0 bg-[url('https://www.transparenttextures.com/patterns/paisley.png')] rotate-180;
 }
+
+/* Fix for UI disturbance with transformations */
+[style*="transform"] {
+  transition: transform 0.3s ease-out;
+  will-change: transform;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+/* Responsive fixes for mobile view */
+@media (max-width: 768px) {
+  .container-custom {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
