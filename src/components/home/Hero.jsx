@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ChevronDown } from "lucide-react";
@@ -12,9 +11,9 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-[90vh] flex items-center justify-center">
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-r from-chai-800/95 to-chai-700/80 mix-blend-multiply z-10" />
+        <div className="absolute inset-0 bg-gradient-to-r from-chai-800/90 to-chai-700/75 mix-blend-multiply z-10" />
         <img 
           src="https://images.unsplash.com/photo-1589476993333-f55b84301219?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80" 
           alt="Indian coffee shop interior" 

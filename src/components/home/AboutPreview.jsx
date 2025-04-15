@@ -7,12 +7,12 @@ const AboutPreview = () => {
     <section id="about-preview" className="py-24 bg-cream-100 indian-pattern">
       <div className="container-custom">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-          <div className="relative">
+          <div className="relative aspect-[4/3] md:aspect-square">
             <div className="absolute -top-5 -left-5 w-28 h-28 border-t-4 border-l-4 border-spice-500 opacity-60"></div>
             <img 
               src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
               alt="Indian coffee preparation" 
-              className="rounded-lg shadow-lg w-full h-auto relative z-10 object-cover"
+              className="rounded-lg shadow-lg w-full h-full object-cover"
             />
             <div className="absolute -bottom-8 -right-8 bg-chai-600 text-white p-6 rounded-lg hidden md:block shadow-lg">
               <p className="text-2xl font-playfair">Est. 1982</p>

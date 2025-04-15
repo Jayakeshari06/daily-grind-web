@@ -22,21 +22,16 @@ const Index = () => {
   };
 
   return (
-    <div className="overflow-x-hidden">
+    <div className="overflow-x-hidden relative">
       <Hero />
-      <div className="bg-cream-100 py-10 text-center shadow-inner">
-        <div className="container-custom">
-          <div className="flex flex-col md:flex-row items-center justify-center md:justify-between gap-6 bg-white/90 p-8 rounded-lg shadow-md border border-chai-100">
-            <p className="text-chai-700 font-medium text-lg md:text-xl">Want to see our complete menu offerings?</p>
-            <Button 
-              onClick={handleDownloadMenu}
-              className="bg-henna-500 hover:bg-henna-600 flex items-center gap-3 px-8 py-6 text-lg"
-            >
-              <Download size={20} />
-              Download Our Menu
-            </Button>
-          </div>
-        </div>
+      <div className="fixed top-24 right-4 z-50">
+        <Button 
+          onClick={handleDownloadMenu}
+          className="bg-henna-500 hover:bg-henna-600 flex items-center gap-2 px-4 py-2 text-sm shadow-lg"
+        >
+          <Download size={16} />
+          Download Menu
+        </Button>
       </div>
       <AboutPreview />
       <FeaturedMenu />
