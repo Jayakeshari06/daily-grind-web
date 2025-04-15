@@ -47,17 +47,17 @@ const About = () => {
                 className="rounded-lg shadow-md w-full h-full object-cover"
               />
               <img 
-                src="https://images.unsplash.com/photo-1567922045116-2a00fae2ed03?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                src="https://images.unsplash.com/photo-1511537190424-bbbab87ac5eb?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
                 alt="Chai Chamandir today" 
                 className="rounded-lg shadow-md w-full h-full object-cover"
               />
               <img 
-                src="https://images.unsplash.com/photo-1602833878274-90a2205b5b0e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
                 alt="Tea leaves preparation" 
                 className="rounded-lg shadow-md w-full h-full object-cover"
               />
               <img 
-                src="https://images.unsplash.com/photo-1547825407-2d060104b7f8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
                 alt="South Indian filter coffee" 
                 className="rounded-lg shadow-md w-full h-full object-cover"
               />
