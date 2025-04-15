@@ -21,8 +21,8 @@ const Hero = () => {
         />
       </div>
       
-      <div className="container-custom relative z-20 text-center text-white mt-10 md:mt-16 animate-fade-in px-4 sm:px-6">
-        <div className="mb-4 md:mb-6">
+      <div className="container-custom relative z-20 text-center text-white px-4 sm:px-6">
+        <div className="mt-32 mb-4 md:mb-6">
           <img 
             src="https://www.freepnglogos.com/uploads/om-symbol-png/om-symbol-hinduism-hindu-dharma-symbol-meaning-history-8.png" 
             alt="Om symbol" 

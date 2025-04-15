@@ -24,13 +24,13 @@ const Index = () => {
   return (
     <div className="overflow-x-hidden relative">
       <Hero />
-      <div className="fixed top-24 right-4 z-50">
+      <div className="fixed top-28 right-6 z-50">
         <Button 
           onClick={handleDownloadMenu}
-          className="bg-henna-500 hover:bg-henna-600 flex items-center gap-2 px-4 py-2 text-sm shadow-lg"
+          className="bg-henna-500/90 hover:bg-henna-600 flex items-center gap-2 px-3 py-1.5 text-sm shadow-lg rounded-full backdrop-blur-sm"
         >
-          <Download size={16} />
-          Download Menu
+          <Download size={14} />
+          Menu PDF
         </Button>
       </div>
       <AboutPreview />

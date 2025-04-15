@@ -7,7 +7,7 @@ const AboutPreview = () => {
     <section id="about-preview" className="py-24 bg-cream-100 indian-pattern">
       <div className="container-custom">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-          <div className="relative aspect-[4/3] md:aspect-square">
+          <div className="relative w-full h-[500px]">
             <div className="absolute -top-5 -left-5 w-28 h-28 border-t-4 border-l-4 border-spice-500 opacity-60"></div>
             <img 
               src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
