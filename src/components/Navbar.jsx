@@ -26,7 +26,7 @@ const Navbar = () => {
     setIsOpen(false);
   }, [location]);
 
-  const isActive = (path: string) => {
+  const isActive = (path) => {
     return location.pathname === path ? 'active' : '';
   };
 
