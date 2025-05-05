@@ -61,7 +61,7 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Navigation */}
-      <div className={`md:hidden fixed top-[60px] left-0 w-full bg-white/95 shadow-lg transition-all duration-300 ease-in-out ${isOpen ? 'opacity-100 h-auto' : 'opacity-0 h-0 invisible'}`}>
+      <div className={`md:hidden fixed top-[60px] right-0 left-0 w-full max-w-full bg-white/95 shadow-lg transition-all duration-300 ease-in-out ${isOpen ? 'opacity-100 h-auto' : 'opacity-0 h-0 invisible overflow-hidden'}`}>
         <div className="container-custom py-4 flex flex-col space-y-4">
           <Link to="/" className={`text-lg font-medium ${isActive('/')} text-coffee-700 hover:text-coffee-500`}>Home</Link>
           <Link to="/about" className={`text-lg font-medium ${isActive('/about')} text-coffee-700 hover:text-coffee-500`}>About</Link>
