@@ -61,12 +61,12 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Navigation */}
-      <div className={`md:hidden absolute w-full bg-white shadow-lg transition-all duration-300 ease-in-out ${isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 invisible'}`}>
+      <div className={`md:hidden fixed top-[60px] left-0 w-full bg-white/95 shadow-lg transition-all duration-300 ease-in-out ${isOpen ? 'opacity-100 h-auto' : 'opacity-0 h-0 invisible'}`}>
         <div className="container-custom py-4 flex flex-col space-y-4">
-          <Link to="/" className={`text-lg ${isActive('/')}`}>Home</Link>
-          <Link to="/about" className={`text-lg ${isActive('/about')}`}>About</Link>
-          <Link to="/menu" className={`text-lg ${isActive('/menu')}`}>Menu</Link>
-          <Link to="/contact" className={`text-lg ${isActive('/contact')}`}>Contact</Link>
+          <Link to="/" className={`text-lg font-medium ${isActive('/')} text-coffee-700 hover:text-coffee-500`}>Home</Link>
+          <Link to="/about" className={`text-lg font-medium ${isActive('/about')} text-coffee-700 hover:text-coffee-500`}>About</Link>
+          <Link to="/menu" className={`text-lg font-medium ${isActive('/menu')} text-coffee-700 hover:text-coffee-500`}>Menu</Link>
+          <Link to="/contact" className={`text-lg font-medium ${isActive('/contact')} text-coffee-700 hover:text-coffee-500`}>Contact</Link>
           <Button asChild className="bg-coffee-500 hover:bg-coffee-600 w-full">
             <a href="https://order.dailygrind.com" target="_blank" rel="noopener noreferrer">
               Order Online
